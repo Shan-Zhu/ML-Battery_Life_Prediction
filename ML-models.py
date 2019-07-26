@@ -20,7 +20,7 @@ from sklearn import tree
 import os
 
 # input data
-data_train=pd.read_csv('C:/Users/Administrator/Desktop/battery-life/data-2-1-2.csv',sep=',')
+data_train=pd.read_csv('data-2-1.csv',sep=',') #or 'data-100-1.csv'
 
 labels=data_train['Type'][:,np.newaxis]
 features=data_train.drop('Type', axis=1)
